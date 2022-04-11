@@ -1,0 +1,10 @@
+.circle.completed::after {
+  position: absolute;
+  content: "";
+  width: 20em;
+  height: 4px;
+  background: #5091CD;
+  left: -3.5em;
+  bottom: 15px;
+  z-index: -1;
+}
