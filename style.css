@@ -56,20 +56,23 @@
   border-radius: 50%;
   background: #cccccc;
   z-index: 1;
+  display: inline-block;
+  position: relative;
 }
 
-.active {
-  background: #cccccc;
+.circle.completed{
+  color: white;
+  background-color: #5091CD;
 }
 
-.circle.active::before {
+.circle.completed::before {
   position: absolute;
   content: "";
-  width: 13em;
+  width: 14em;
   height: 4px;
-  background: #cccccc;
+  background: #5091CD;
   left: -3.5em;
-  bottom: 4.2em;
+  bottom: 15px;
   z-index: -1;
 }
 
@@ -78,7 +81,7 @@
   margin-top: 100px;
 }
 
-.btn {
+#nextBtn{
   background: #366999;
   border-radius: 5px;
   margin: 30px;
@@ -121,16 +124,24 @@ label {
 .title-input {
   height: 30px;
   margin: 20px 0;
-  border-radius: 5px
-  width: 40px;
+  border-radius: 5px;
+  width: 65px;
 }
 
 .input-details-1 {
   width: 436px;
   margin: 20px 0;
-  height: 40px;
+  height: 30px;
   border-radius: 5px;
 }
+
+.input-details-2 {
+  width: 160px;
+  margin: 20px 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
 
 .colored-input {
   background: #5091CD;
@@ -158,6 +169,7 @@ label {
   display: inline-block;
   position: absolute;
   right: 30px;
+  
 }
 
 /* PAGE-5 DESIGN */
@@ -203,4 +215,30 @@ label {
   position: absolute;
   left: 23%;
   padding-top: 50px;
+}
+h2{
+  margin-bottom: 10px;
+}
+
+.benefits{
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+#add_benef{
+  border-radius: 50%;
+  background: #5091CD;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin: 30px auto;
+  cursor: pointer;
+  color: #fff;
+}
+.text_add{
+  text-align: center;
+  margin: 30px auto;
+
 }
