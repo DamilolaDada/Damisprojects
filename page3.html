@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>page3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html"><img src="images/Trustees 1.png" class="logo"></a>
+    <h2>LAST WILL AND TESTAMENT</h2>
+  </div>
+  <!-- Progressive Bar -->
+  <div class="navGrid">
+    <a href="#" class="navList">
+      <div class="circle active"></div>
+      <span class="text">Getting Started</span>
+    </a>
+
+    <a href="#" class="navList">
+      <div class="circle active"></div>
+      <span class="text">Personal Information</span>
+    </a>
+
+    <a href="#" class="navList">
+      <div class="circle active"></div>
+      <span class="text">Spouse & Beneficiaries</span>
+    </a>
+
+    <a href="#" class="navList">
+      <div class="circle active"></div>
+      <span class="text">Asset details</span>
+    </a>
+    <a href="#" class="navList">
+      <div class="circle active"></div>
+      <span class="text">Confirmation & Checkout</span>
+    </a>
+  </div>
+  <!-- Information Input -->
+
+  <div class="container">
+    <form class="" action="index.html" method="post">
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">Name of Spouse</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details" type="text" name="" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="">Address</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details-1" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+      <div class="second-layer">
+        <div class="row">
+          <div class="col-25">
+            <label for="">No of Dependents</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details" type="text" name="" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="">Name of Dependents</label>
+          </div>
+          <div class="col-75">
+            <input class="input-details-1" type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+      <h2>BENEFICIARY DETAILS</h2>
+      <div class="second-layer">
+        <form id="product_form" action="" method="post">
+          <div class="row" id="row1" style="width:182px;">
+            <div class="col-25">
+              <label for="">Full Name</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-2" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Address</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-2" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Phone</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-2" type="text" name="" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="">Email</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-2" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="">Values</label>
+            </div>
+            <div class="col-75">
+              <input class="input-details-2" type="text" name="" value="">
+            </div>
+          </div>
+      </div>
+    </form>
+
+  </div>
+  <div class="benefits">
+    <div id="add_benef">+</div>
+    <p class="text_add">Add more Beneficiary</p>
+  </div>
+<div class="nav-buttons">
+  <a class="back" href="page2.html">Back</a>
+  <a class="next" href="page4.html">Next</a>
+</div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+          $("#add_benef").click(function(e) {
+            e.preventDefault();
+            $("#row1").append(`  <tr>
+                <td> <input type="text" class="input-details-2" name="" value=""> </td>
+                <td> <input type="text" class="input-details-2" name="" value=""> </td>
+                <td> <input type="text" class="input-details-2" name="" value=""> </td>
+                <td> <input type="text" class="input-details-2" name="" value=""> </td>
+                <td> <input type="text" class="input-details-2" name="" value=""> </td>
+              </tr> `);
+          });
+        });
+  </script>
+</body>
+</html>
