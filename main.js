@@ -274,6 +274,9 @@ $('.check-box').click(function () {
 
         $('.pay-button').removeAttr('disabled'); //enable input
         $('.submit-btn').removeAttr('disabled');
+
+
+
         $(".pay-button").css("background-color","#5091CD");
         $(".submit-btn").css("background-color","#5091CD");
         $(".pay-button").css("cursor","pointer");
@@ -287,3 +290,5 @@ $('.check-box').click(function () {
         $(".submit-btn").css("cursor","not-allowed");
     }
 });
+
+  $(".pay-button").attr("href", "https://paystack.com/pay/simplewill");

@@ -15,7 +15,7 @@
     <img src="images/Trustees 1.png" class="logo">
     <h2>LAST WILL AND TESTAMENT</h2>
   </div>
-  <form class="" action="index.html" method="post">
+  <form class="" action="/" method="post">
     <!-- progress Bar -->
     <div class="progressbar">
       <div class="progress" id="progress"></div>
@@ -59,7 +59,7 @@
               <label for="">Surname <span>*</span> </label>
             </div>
             <div class="col-75">
-              <input class="input-details surname " type="text" name="" value="" >
+              <input class="input-details surname " type="text" name="" value="">
             </div>
           </div>
           <div class="row">
@@ -67,7 +67,7 @@
               <label for="">Name <span>*</span> </label>
             </div>
             <div class="col-75">
-              <input class="input-details name" type="text" name="" value="" >
+              <input class="input-details name" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
@@ -75,7 +75,7 @@
               <label for="">Other Names <span>*</span> </label>
             </div>
             <div class="col-75">
-              <input class="input-details other-name" type="text" name="" value="" >
+              <input class="input-details other-name" type="text" name="" value="">
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <label for="">Phone Number <span>*</span></label>
             </div>
             <div class="col-75">
-              <input class="input-details phone-num" type="number" name="" value="" >
+              <input class="input-details phone-num" type="number" name="" value="">
             </div>
           </div>
           <div class="row">
@@ -93,7 +93,7 @@
               <label for="">Address</label>
             </div>
             <div class="col-75">
-              <input class="input-details-1" type="text" name="" value="" >
+              <input class="input-details-1" type="text" name="" value="">
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
               <label for="">Company Name</label>
             </div>
             <div class="col-75">
-              <input class="input-details" type="text" name="" value="" >
+              <input class="input-details" type="text" name="" value="">
 
             </div>
           </div>
@@ -112,7 +112,7 @@
               <label for="">Company Address</label>
             </div>
             <div class="col-75">
-              <input class="input-details-1" type="text" name="" value="" >
+              <input class="input-details-1" type="text" name="" value="">
             </div>
           </div>
         </div>
@@ -270,11 +270,11 @@
         </div>
         <div class="benefits">
           <button id="add_more" type="button" name="button"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add More</button>
-          <button id="remove" type="button" name="button" hidden>Remove</button>
+          <!-- <button id="remove" type="button" name="button" hidden>Remove</button> -->
         </div>
-          <div class="">
-            <span>* <em> please fill required fields</em></span>
-          </div>
+        <div class="">
+          <span>* <em> please fill required fields</em></span>
+        </div>
 
         <button type="button" class="back btn-prev btn" name="button">Previous</button>
         <button type="button" class="next-btn btn-next space-btn btn reveal-btn1" name="button">Next</button>
@@ -367,7 +367,7 @@
 
       <div class="">
         <button id="add_more_1" type="button" name="button">Add More</button>
-        <!-- <button id="remove_1" type="button" name="button" hidden >Remove</button> -->
+        <button id="remove_1" type="button" name="button" hidden>Remove</button>
       </div>
       <div class="">
         <span>* <em> please fill required fields</em></span>
@@ -381,7 +381,7 @@
     <div class="form-step">
       <div class="checkout-info">
         <h2>Would you like Meristem Trustees Limited to lodge this will for you? </h2>
-        <label for=""><input id="show" type="radio" name="yes" value="yes"> YES <input id="hide" type="radio" name="yes" value="No"> NO </label>
+        <label for=""><input id="show" type="radio" name="yes" value="yes"> YES <input id="hide" type="radio" name="yes" value="No" checked> NO </label>
 
         <div class="payment container">
           <table>
@@ -405,13 +405,13 @@
           </td>
         </tr>
         </table>
-        <p class="light-text"><input class="check-box"  type="checkbox" name="" value=""> By checking this box, I confirm that I am at least 18 years of age and I have read and agreed to Meristem's Terms of Service & Privacy Notice </p>
-      <button type="button" class="pay-button" name="button">Pay Now</button>
+        <p class="light-text"><input class="check-box" type="checkbox" name="" value=""> By checking this box, I confirm that I am at least 18 years of age and I have read and agreed to Meristem's Terms of Service & Privacy Notice </p>
+        <button onclick="location.href='https://paystack.com/pay/simplewill';" disabled type="button" class="pay-button" name="button">Pay Now</button>
       </div>
       <div class="nav-buttons">
 
-        <button type="button" class="back btn-prev btn" name="button">Back</button>
-        <button type="submit" class="next btn-next space-btn btn submit-btn" name="button" disabled>Submit</button>
+        <button type="button" class="back btn-prev btn prev-btn" name="button">Back</button>
+        <!-- <button type="submit" class="next btn-next space-btn btn submit-btn" name="button" disabled>Submit</button> -->
 
       </div>
     </div>
@@ -422,6 +422,8 @@
   </form>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script src="main.js" charset="utf-8"></script>
+  <!-- <script src="app.js" charset="utf-8"></script> -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
 
 </body>
 
